@@ -16,26 +16,28 @@ body {
 
 /* NAVBAR */
 nav {
-    background-color: #0b1f3a;
+    background-color: #111;
     color: white;
-    padding: 15px 20px;
+    padding: 20px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column; /* Stacks the title and links vertically */
+    align-items: center;    /* Centers everything horizontally */
 }
 
 nav h1 {
     margin: 0;
-    font-size: 18px;
+    font-size: 24px;
+    text-align: center;    /* Ensures the text itself is centered */
 }
 
 nav ul {
     list-style: none;
-    display: flex;
-    gap: 15px;
     padding: 0;
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;      /* Adds a little space under the title */
 }
+
 
 nav ul li {
     cursor: pointer;
@@ -173,7 +175,7 @@ footer {
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="About.html">About</a></li>
+        <li><a href="about.html">About</a></li>
         
     </ul>
 </nav>
