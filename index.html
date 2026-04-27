@@ -80,15 +80,22 @@ nav ul li {
 }
 
 /* IMAGE SECTION */
+/* IMAGE SECTION */
 .gallery {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center; /* Centers the images if they don't fill a full row */
+    padding: 10px;           /* Adds a small buffer around the whole gallery */
+    background-color: #f4f4f4; /* Optional: light grey background for the gallery area */
 }
 
 .gallery img {
-    width: 33.33%;
+    width: 31%;              /* Slightly smaller than 33% to allow for margins */
+    margin: 1%;              /* Adds 1% spacing on all sides of each image */
     height: 250px;
     object-fit: cover;
+    border-radius: 4px;      /* Optional: slightly rounds the corners for a modern look */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adds a subtle shadow to each photo */
 }
 
 /* SERVICES */
