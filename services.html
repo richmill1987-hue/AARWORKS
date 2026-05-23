@@ -1,258 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | American Abatement & Restoration</title>
+    <meta name="description" content="See our demolition, abatement, and restoration work. Before and after project gallery. Fast, dependable service in Texas.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {margin: 0; font-family: Arial, sans-serif; background-color: #f4f4f4; }
+        /* NAVBAR */
+        /* NAVBAR */
+        nav {background-color: #0b1f3a; /* Matching deep blue */ color: white; padding: 20px; display: flex; flex-direction: column; /* Stacks the title and links */ align-items: center;    /* Centers everything horizontally */ text-align: center; }
+        nav h1 {margin: 0; font-size: 22px;        /* Adjusted for visibility */ width: 100%; }
+        nav ul {list-style: none; display: flex; gap: 20px; padding: 0; margin-top: 15px;      /* Space between heading and menu */ }
+        nav ul li a {color: white; text-decoration: none; }
+        /* HERO */
+        .hero {background-color: #0b1f3a; color: white; text-align: center; padding: 60px 20px; }
+        /* SERVICES */
+        .services-container {padding: 40px 20px; max-width: 900px; margin: auto; }
+        .service-section {background-color: white; margin-bottom: 25px; padding: 25px; border-left: 5px solid #c8102e; }
+        .service-section h3 {color: #0b1f3a; }
+        .service-section ul {padding-left: 20px; }
+        /* BEFORE/AFTER */
+        .gallery-section {padding: 40px 20px; text-align: center; }
+        .gallery-section h2 {margin-bottom: 30px; }
+        .compare-container {position: relative; max-width: 900px; margin: 0 auto 40px auto; box-shadow: 0 4px 10px rgba(0,0,0,.1) }
+        .compare-container img {width: 100%; display: block; }
+        .after-img {position: absolute; top: 0; left: 0; width: 50%; overflow: hidden; }
+        .slider {position: absolute; top: 0; left: 50%; width: 4px; height: 100%; background: #c8102e; cursor: ew-resize; }
+        /* CTA */
+        .cta {background-color: #0b1f3a; color: white; text-align: center; padding: 40px 20px; }
+        .cta button {margin-top: 20px; padding: 12px 25px; background-color: #c8102e; border: none; color: white; }
+        
+        /* FOOTER WITH INSTAGRAM */
+        footer {background-color: #111; color: white; text-align: center; padding: 20px 15px; font-size: 14px; }
+        footer p { margin: 0 0 10px 0; }
+        footer .social-links { margin-top: 12px; }
+        footer a.instagram-link {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: opacity 0.2s;
+        }
+        footer a.instagram-link:hover { opacity: 0.8; }
+        footer a.instagram-link i { font-size: 16px; }
 
-<title>Our Services | American Abatement & Restoration</title>
-<meta name="description" content="See our demolition, abatement, and restoration work. Before and after project gallery. Fast, dependable service in Texas.">
-
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-}
-
-/* NAVBAR */
-/* NAVBAR */
-nav {
-    background-color: #0b1f3a; /* Matching deep blue */
-    color: white;
-    padding: 20px;
-    display: flex;
-    flex-direction: column; /* Stacks the title and links */
-    align-items: center;    /* Centers everything horizontally */
-    text-align: center;
-}
-
-nav h1 {
-    margin: 0;
-    font-size: 22px;        /* Adjusted for visibility */
-    width: 100%;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin-top: 15px;      /* Space between heading and menu */
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-/* HERO */
-.hero {
-    background-color: #0b1f3a;
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-}
-
-/* SERVICES */
-.services-container {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: auto;
-}
-
-.service-section {
-    background-color: white;
-    margin-bottom: 25px;
-    padding: 25px;
-    border-left: 5px solid #c8102e;
-}
-
-.service-section h3 {
-    color: #0b1f3a;
-}
-
-.service-section ul {
-    padding-left: 20px;
-}
-
-/* BEFORE/AFTER */
-.gallery-section {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.gallery-section h2 {
-    margin-bottom: 30px;
-}
-
-.compare-container {
-    position: relative;
-    max-width: 900px;
-    margin: 0 auto 40px auto;
-    box-shadow: 0 4px 10px rgba(0,0,0,.1)
-}
-
-.compare-container img {
-    width: 100%;
-    display: block;
-}
-
-.after-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    overflow: hidden;
-}
-
-.slider {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 4px;
-    height: 100%;
-    background: #c8102e;
-    cursor: ew-resize;
-}
-
-/* CTA */
-.cta {
-    background-color: #0b1f3a;
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.cta button {
-    margin-top: 20px;
-    padding: 12px 25px;
-    background-color: #c8102e;
-    border: none;
-    color: white;
-}
-
-/* FOOTER */
-footer {
-    background-color: #111;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-    .after-img {
-        width: 100%;
-        position: relative;
-    }
-    .slider {
-        display: none;
-    }
-}
-</style>
+        /* MOBILE */
+        @media (max-width: 768px) {.after-img {width: 100%; position: relative; } .slider {display: none; } }
+    </style>
 </head>
-
 <body>
-
-<nav>
-    <h1>American Abatement & Restoration</h1>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="about.html">About</a></li>
-    </ul>
-</nav>
-
-<section class="hero">
-    <h2>Our Work Speaks for Itself</h2>
-    <p>Before & After Project Results</p>
-</section>
-
-<!-- BEFORE & AFTER GALLERY -->
-<section class="gallery-section">
-    <h2>Before & After</h2>
-
-    <!-- PROJECT 1 -->
-    <div class="compare-container">
-        <img src="HouseBefore1.JPEG" alt="Before demolition">
-        <div class="after-img">
-            <img src="Field10.JPEG" alt="After demolition">
-        </div>
-        <div class="slider"></div>
-    </div>
-
-    <!-- PROJECT 2 -->
-    <div class="compare-container">
-        <img src="Field9.JPEG" alt="Before demolition project">
-        <div class="after-img">
-            <img src="Field6.JPEG" alt="After demolition project">
-        </div>
-        <div class="slider"></div>
-    </div>
-
-</section>
-
-<!-- SERVICES -->
-<section class="services-container">
-
-    <div class="service-section">
-        <h3>Demolition Services</h3>
+    <nav>
+        <h1>American Abatement & Restoration</h1>
         <ul>
-            <li>Residential demolition</li>
-            <li>Commercial demolition</li>
-            <li>Land Clearing</li>
-            <li>Concrete removal</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
-    </div>
+    </nav>
 
-    <div class="service-section">
-        <h3>Abatement Services</h3>
-        <ul>
-            <li>Fire Damage</li>
-            <li>Water Damage Remediation</li>
-            <li>Mold remediation</li>
-        </ul>
-    </div>
+    <section class="hero">
+        <h2>Our Work Speaks for Itself</h2>
+        <p>Before & After Project Results</p>
+    </section>
 
-</section>
+    <section class="gallery-section">
+        <h2>Before & After</h2>
+        <div class="compare-container">
+            <img src="HouseBefore1.JPEG" alt="Before demolition">
+            <div class="after-img">
+                <img src="Field10.JPEG" alt="After demolition">
+            </div>
+            <div class="slider"></div>
+        </div>
+        <div class="compare-container">
+            <img src="Field9.JPEG" alt="Before demolition project">
+            <div class="after-img">
+                <img src="Field6.JPEG" alt="After demolition project">
+            </div>
+            <div class="slider"></div>
+        </div>
+    </section>
 
-<!-- CTA -->
-<section class="cta">
-    <h2>Need Results Like This?</h2>
-    <p>Call today for fast, dependable service.</p>
+    <section class="services-container">
+        <div class="service-section">
+            <h3>Demolition Services</h3>
+            <ul>
+                <li>Residential demolition</li>
+                <li>Commercial demolition</li>
+                <li>Land Clearing</li>
+                <li>Concrete removal</li>
+            </ul>
+        </div>
+        <div class="service-section">
+            <h3>Abatement Services</h3>
+            <ul>
+                <li>Fire Damage</li>
+                <li>Water Damage Remediation</li>
+                <li>Mold remediation</li>
+            </ul>
+        </div>
+    </section>
 
-    <a href="tel:8178223216">
-        <button>Call 817-822-3216</button>
-    </a>
-</section>
+    <section class="cta">
+        <h2>Need Results Like This?</h2>
+        <p>Call today for fast, dependable service.</p>
+        <a href="tel:8178223216">
+            <button>Call 817-822-3216</button>
+        </a>
+    </section>
 
-<footer>
-    <p>© 2026 American Abatement & Restoration</p>
-</footer>
+    <footer>
+        <p>© 2026 American Abatement & Restoration | Texas Demolition Experts</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/american.restoration_tx" target="_blank" rel="noopener noreferrer" class="instagram-link">
+                <i class="fab fa-instagram"></i> Follow us on Instagram
+            </a>
+        </div>
+    </footer>
 
-<script>
-const sliders = document.querySelectorAll(".slider");
-
-sliders.forEach(slider => {
-    const container = slider.parentElement;
-    const afterImg = container.querySelector(".after-img");
-
-    let isDown = false;
-
-    slider.addEventListener("mousedown", () => isDown = true);
-    window.addEventListener("mouseup", () => isDown = false);
-
-    window.addEventListener("mousemove", (e) => {
-        if (!isDown) return;
-        let rect = container.getBoundingClientRect();
-        let x = e.clientX - rect.left;
-        let percent = (x / rect.width) * 100;
-
-        afterImg.style.width = percent + "%";
-        slider.style.left = percent + "%";
-    });
-});
-</script>
-
+    <script>
+        const sliders = document.querySelectorAll(".slider");
+        sliders.forEach(slider => {
+            const container = slider.parentElement;
+            const afterImg = container.querySelector(".after-img");
+            let isDown = false;
+            slider.addEventListener("mousedown", () => isDown = true);
+            window.addEventListener("mouseup", () => isDown = false);
+            window.addEventListener("mousemove", (e) => {
+                if (!isDown) return;
+                let rect = container.getBoundingClientRect();
+                let x = e.clientX - rect.left;
+                let percent = (x / rect.width) * 100;
+                afterImg.style.width = percent + "%";
+                slider.style.left = percent + "%";
+            });
+        });
+    </script>
 </body>
 </html>
